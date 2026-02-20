@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy as Markdown</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <h1>📋 Copy as Markdown</h1>
+      <p class="description">
+        Right-click on any page to copy content as Markdown.
+      </p>
+
+      <div class="actions">
+        <button id="copy-page-btn" class="btn btn-primary">
+          📄 Copy This Page
+        </button>
+        <button id="copy-selection-btn" class="btn btn-secondary">
+          ✂️ Copy Selection
+        </button>
+      </div>
+
+      <div class="shortcuts">
+        <h2>Context Menu</h2>
+        <ul>
+          <li><strong>Copy Selection</strong> — Selected text → Markdown</li>
+          <li><strong>Copy Link</strong> — Link → <code>[text](url)</code></li>
+          <li><strong>Copy Page</strong> — Full page → Markdown</li>
+          <li><strong>Copy Image</strong> — Image → <code>![](url)</code></li>
+        </ul>
+      </div>
+
+      <div class="shortcuts">
+        <h2>Keyboard Shortcuts</h2>
+        <ul>
+          <li><kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>C</kbd> — Copy Selection</li>
+          <li><kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>M</kbd> — Copy Page</li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <span>v1.0.0</span>
+        <a href="https://github.com/" target="_blank">Feedback</a>
+      </div>
+    </div>
+
+    <script src="popup.ts" type="module"></script>
+  </body>
+</html>
